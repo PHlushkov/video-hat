@@ -1,0 +1,17 @@
+.header{
+    padding-top: 40px;
+}
+
+.header__logo{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.header__logo img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: 250px;
+}
