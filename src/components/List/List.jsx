@@ -4,7 +4,7 @@ import style from "./style/list.module.css"
 import { Button } from '@mui/material'
 import ClipboardJS from 'clipboard';
 import { filterItems } from '../filterItems/filterItems';
-import { ColorRing, FidgetSpinner, MagnifyingGlass } from 'react-loader-spinner';
+import {InfinitySpin } from 'react-loader-spinner';
 
 function List() {
     const data = useSelector(state => state.data.data)
@@ -37,7 +37,7 @@ function List() {
                         <p ref={textToCopyRef}>{filteredItems}</p>
                         <Button className="copy-button" variant='contained'>Скопіювати</Button>
                     </div>
-                ): <MagnifyingGlass/>
+                ): <InfinitySpin/>
                 }
             </div>
         </div>
